@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="550" viewBox="0 0 1100 550" role="img" aria-label="YudhaR profile card">
+<style>
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;white-space:pre}
+.ascii{font-size:10px;fill:#c9d1d9}
+.text{font-size:13px}
+.header{fill:#f0f6fc;font-weight:700}
+.label{fill:#ff9e64}
+.value{fill:#7dcfff}
+.dots{fill:#484f58}
+.prompt{fill:#9ece6a;font-weight:700}
+.line{opacity:0;animation:show .35s ease-out forwards}
+@keyframes show{from{opacity:0;transform:translateX(-6px)}to{opacity:1;transform:none}}
+.cursor{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.line{animation:none;opacity:1}.cursor{animation:none}}
+</style>
+<rect x="0.5" y="0.5" width="1099" height="549" rx="12" fill="#0d1117" stroke="#30363d"/>
+<text class="mono ascii" x="24" y="43" xml:space="preserve">
+<tspan x="24" dy="12">                                 %@@*-</tspan>
+<tspan x="24" dy="12">                                 #@@@@%*:</tspan>
+<tspan x="24" dy="12">                                 =@@%%@@@%+:</tspan>
+<tspan x="24" dy="12">                                 .@@%*#%@@@@%+:</tspan>
+<tspan x="24" dy="12">                                  #@@#**#%@@@@@%=.        ..</tspan>
+<tspan x="24" dy="12">                                  -@@%****#%@@@@@@#=.   .=@=</tspan>
+<tspan x="24" dy="12">                                   @@@#*#%%%@@@@@@@@@##%@@%.</tspan>
+<tspan x="24" dy="12">                                   @@@#*#%@@@@@@@@@@@@@@@@%##*+-.</tspan>
+<tspan x="24" dy="12">                            .:-=---@@@%%@@@@@@@@@@@@@@@@@@@@@@@@@#=.</tspan>
+<tspan x="24" dy="12">     .                      .-%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%+.</tspan>
+<tspan x="24" dy="12">    -@@%*=:.                .+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*:.:-</tspan>
+<tspan x="24" dy="12">    =@@@@@@@%#*+=-::...::-+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*=-:..:+</tspan>
+<tspan x="24" dy="12">    .@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*</tspan>
+<tspan x="24" dy="12">     +@@@@@@@@@@@@@@@@@@@@@@@@##@@%+%@@##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%+:</tspan>
+<tspan x="24" dy="12">      #@@@@@@@@@@@@@@@@@@@%#%@@##@@#@%++%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*.</tspan>
+<tspan x="24" dy="12">      .%@@@@@@@@@@@@@@@@@@#=--%@@@@@@@%#*+*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:</tspan>
+<tspan x="24" dy="12">       .#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%</tspan>
+<tspan x="24" dy="12">         *@@@@@@@@@@@@@@@@#*++@@@@@@@@*+*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">          =@@@@@@@@@@@@@@@*+*#%@@%@@#%@#++@@@#=-:.:=*@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">        .=#@@@@@@@@@@@@@@@@@#--%% +@*.=@@@@@-  .     :%@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">       =*%@@@@@@@@@@@@@@@@@@-=@@# *@@%=#@@@=   -*     :@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">           #@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@=    +*     @@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">           %@@@@@@@@@@@@@@#**#%@@@@@@@@@@@@#.    =.   *@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">          .@@@@@@@@@@@@#-.     :+@@@@@@@@@@@%=.    :+%@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">        .+@@@@@@@@@@@@*    =-    :@@@@@@@@@@@@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">      -%@@@@@@@@@@@@@@.    .#:    *@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">       .=*%%@@@@@@@@@@-     :#.   #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">           +@@@@@@@@@@@+        :#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">          -@@@@@@@@@@@@@%*+===*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">          #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">         :@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">         :#--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">             *@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">             #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">           .#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">        .-+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">        .-=++=-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+<tspan x="24" dy="12">               .%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+</text>
+<text class="mono text line" x="500" y="61" style="animation-delay:0.00s" xml:space="preserve"><tspan class="header">yudha@rizqia ---------------------------------------------------</tspan></text>
+<text class="mono text line" x="500" y="90" style="animation-delay:0.07s" xml:space="preserve"><tspan class="label">. OS: </tspan><tspan class="dots">........................................... </tspan><tspan class="value">macOS, Windows</tspan></text>
+<text class="mono text line" x="500" y="107" style="animation-delay:0.14s" xml:space="preserve"><tspan class="label">. Host: </tspan><tspan class="dots">......................................... </tspan><tspan class="value">GitHub Profile</tspan></text>
+<text class="mono text line" x="500" y="124" style="animation-delay:0.21s" xml:space="preserve"><tspan class="label">. Kernel: </tspan><tspan class="dots">........................................ </tspan><tspan class="value">Web Developer</tspan></text>
+<text class="mono text line" x="500" y="141" style="animation-delay:0.28s" xml:space="preserve"><tspan class="label">. Uptime: </tspan><tspan class="dots">........................... </tspan><tspan class="value">4 years, 5 months, 16 days</tspan></text>
+<text class="mono text line" x="500" y="158" style="animation-delay:0.35s" xml:space="preserve"><tspan class="label">. IDE: </tspan><tspan class="dots">................................ </tspan><tspan class="value">VSCode, Jupyter Notebook</tspan></text>
+<text class="mono text line" x="500" y="187" style="animation-delay:0.42s" xml:space="preserve"><tspan class="label">. Languages.Programming: </tspan><tspan class="dots">.... </tspan><tspan class="value">PHP, Python, Java, JavaScript, C++</tspan></text>
+<text class="mono text line" x="500" y="204" style="animation-delay:0.49s" xml:space="preserve"><tspan class="label">. Languages.Data: </tspan><tspan class="dots">.................................... </tspan><tspan class="value">SQL, JSON</tspan></text>
+<text class="mono text line" x="500" y="221" style="animation-delay:0.56s" xml:space="preserve"><tspan class="label">. Frameworks.Frontend: </tspan><tspan class="dots">............... </tspan><tspan class="value">React, Next.js, Bootstrap</tspan></text>
+<text class="mono text line" x="500" y="238" style="animation-delay:0.63s" xml:space="preserve"><tspan class="label">. Frameworks.Backend: </tspan><tspan class="dots">......... </tspan><tspan class="value">Laravel, Node.js, FastAPI, Flask</tspan></text>
+<text class="mono text line" x="500" y="255" style="animation-delay:0.70s" xml:space="preserve"><tspan class="label">. Frameworks.AI_ML: </tspan><tspan class="dots">....................... </tspan><tspan class="value">OpenCV, scikit-learn</tspan></text>
+<text class="mono text line" x="500" y="272" style="animation-delay:0.77s" xml:space="preserve"><tspan class="label">. Database: </tspan><tspan class="dots">....................................... </tspan><tspan class="value">MySQL, Redis</tspan></text>
+<text class="mono text line" x="500" y="289" style="animation-delay:0.84s" xml:space="preserve"><tspan class="label">. Cloud: </tspan><tspan class="dots">...................... </tspan><tspan class="value">AWS, Google Cloud, Alibaba Cloud</tspan></text>
+<text class="mono text line" x="500" y="318" style="animation-delay:0.91s" xml:space="preserve"><tspan class="label">. Hobbies.Software: </tspan><tspan class="dots">.............. </tspan><tspan class="value">Face Recognition, Data Mining</tspan></text>
+<text class="mono text line" x="500" y="335" style="animation-delay:0.98s" xml:space="preserve"><tspan class="label">. Hobbies.Hardware: </tspan><tspan class="dots">.............................. </tspan><tspan class="value">Arduino &amp; IoT</tspan></text>
+<text class="mono text line" x="500" y="364" style="animation-delay:1.05s" xml:space="preserve"><tspan class="header">- Contact ------------------------------------------------------</tspan></text>
+<text class="mono text line" x="500" y="381" style="animation-delay:1.12s" xml:space="preserve"><tspan class="label">. LinkedIn: </tspan><tspan class="dots">................ </tspan><tspan class="value">linkedin.com/in/yudha-rizqia-grafer</tspan></text>
+<text class="mono text line" x="500" y="398" style="animation-delay:1.19s" xml:space="preserve"><tspan class="label">. GitHub: </tspan><tspan class="dots">.................................... </tspan><tspan class="value">github.com/YudhaR</tspan></text>
+<text class="mono text line" x="500" y="427" style="animation-delay:1.26s" xml:space="preserve"><tspan class="header">- GitHub Stats -------------------------------------------------</tspan></text>
+<text class="mono text line" x="500" y="444" style="animation-delay:1.33s" xml:space="preserve"><tspan class="label">. Repos: </tspan><tspan class="dots">.................................................... </tspan><tspan class="value">19</tspan></text>
+<text class="mono text line" x="500" y="461" style="animation-delay:1.40s" xml:space="preserve"><tspan class="label">. Stars: </tspan><tspan class="dots">..................................................... </tspan><tspan class="value">1</tspan></text>
+<text class="mono text line" x="500" y="478" style="animation-delay:1.47s" xml:space="preserve"><tspan class="label">. Followers: </tspan><tspan class="dots">................................................ </tspan><tspan class="value">18</tspan></text>
+<text class="mono text line" x="500" y="495" style="animation-delay:1.54s" xml:space="preserve"><tspan class="label">. Following: </tspan><tspan class="dots">................................................ </tspan><tspan class="value">14</tspan></text>
+<text class="mono text line" x="500" y="529" style="animation-delay:1.61s" xml:space="preserve"><tspan class="prompt">yudha@rizqia:~$ </tspan><tspan class="value">echo "terima kasih sudah mampir"</tspan><tspan class="value cursor"> █</tspan></text>
+</svg>

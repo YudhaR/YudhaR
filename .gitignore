@@ -1,0 +1,15 @@
+# File lokal, tidak dipakai GitHub
+preview.html
+generate_profile.py
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Editor & OS
+.claude/
+.vscode/
+.idea/
+.DS_Store

@@ -1,116 +1,43 @@
-<p align="center"><a href="https://www.yudharizqia.my.id/"><img width="80%" alt="Hello, I'm Anurag. I do open source!" src="https://i.imgur.com/PfFtQBT.png" /></a></p>
-
-<br />
-
-I'm a self-taught system-oriented Backend Developer from Indonesia 🇮🇩
-
-About me
-
-- 🧩 Backend Developer focused on building scalable and automated systems
-  
-- 🤖 Working with AI, NLP, Computer Vision, and ML systems
-  
-- ⚙️ Designing end-to-end pipelines, from data processing to model deployment
-  
-- 🛠️ Enjoy automation, tooling, and system-level engineering
-  
-- 💬 Ask me about anything [here](https://github.com/YudhaR/ydhrizqi._/issues)
-  
----
-
-<!-- ============================= -->
-<!--          INTRODUCTION         -->
-<!-- ============================= -->
-
-# Hi, I'm [Your Name]  
-**[Your tagline here — one line that summarizes your mission/skills.]**
-
----
-
-<!-- ============================= -->
-<!--             ABOUT ME          -->
-<!-- ============================= -->
-
-## About Me  
-[Write 3–5 sentences about yourself. Who you are, what you build, and what excites you.  
-Keep it personable and approachable, but professional.]  
-
-🎥 Optional: Add a link to your YouTube channel or other platform.  
-
----
-
-<!-- ============================= -->
-<!--         TECH & TOOLS          -->
-<!-- ============================= -->
-
-## Tech & Tools  
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=Yudha%20Rizqia&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Web%20Developer%20%7C%20PHP%20%E2%80%A2%20Laravel%20%E2%80%A2%20Python&descAlignY=60&descSize=16" width="100%" alt="Yudha Rizqia" />
 
 <p align="center">
-  <!-- Replace or remove badges as needed -->
-  <img src="https://img.shields.io/badge/Skill1-Color?logo=tool&logoColor=white" />
-  <img src="https://img.shields.io/badge/Skill2-Color?logo=tool&logoColor=white" />
-  <img src="https://img.shields.io/badge/Skill3-Color?logo=tool&logoColor=white" />
+  <a href="https://github.com/YudhaR">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=2C9BD6&center=true&vCenter=true&width=520&lines=Hi%2C+I'm+Yudha+%F0%9F%91%8B;Web+Developer+(PHP+%26+Laravel);Machine+Learning+%26+Computer+Vision;Belajar+hal+baru+setiap+hari" alt="Typing SVG" />
+  </a>
 </p>
-
----
-
-<!-- ============================= -->
-<!--           MY PROJECTS         -->
-<!-- ============================= -->
-
-## My Projects  
 
 <p align="center">
-  <!-- Replace GIF with your own or static screenshots -->
-  <img src="INSERT_PROJECT1_GIF_URL" width="150" alt="Project One Demo"/>
+  <a href="https://www.linkedin.com/in/yudha-rizqia-grafer/"><img src="https://img.shields.io/badge/LinkedIn-Yudha%20Rizqia-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/YudhaR"><img src="https://img.shields.io/github/followers/YudhaR?label=Followers&style=for-the-badge&logo=github&color=24292f" alt="GitHub followers" /></a>
+  <img src="https://komarev.com/ghpvc/?username=YudhaR&label=Profile%20views&color=2c5364&style=for-the-badge" alt="Profile views" />
 </p>
 
----
+### 🙋‍♂️ Tentang Saya
 
-### [Project One](INSERT_PROJECT_ONE_LINK)  
-_[One-line description of the project.]_  
+<div align="center">
+  <a href="https://github.com/YudhaR">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./dark_mode.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./light_mode.svg">
+      <img alt="Yudha Rizqia terminal profile" src="./light_mode.svg" width="100%">
+    </picture>
+  </a>
+</div>
 
- Features:  
-- [Feature 1]  
-- [Feature 2]  
-- [Feature 3]  
+### 🛠️ Tech Stack
 
-🔗 [Live Link or Store Link](INSERT_LINK_HERE)  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=php,laravel,html,css,js,bootstrap,react,nextjs" height="48" alt="PHP, Laravel, HTML, CSS, JavaScript, Bootstrap, React, Next.js" />
+  <br />
+  <img src="https://skillicons.dev/icons?i=nodejs,python,fastapi,flask,mysql,redis,opencv,sklearn" height="48" alt="Node.js, Python, FastAPI, Flask, MySQL, Redis, OpenCV, scikit-learn" />
+  <br />
+  <img src="https://skillicons.dev/icons?i=aws,gcp" height="48" alt="AWS, Google Cloud" /><img src="./icons/alibabacloud.svg" height="48" alt="Alibaba Cloud" /><img src="https://skillicons.dev/icons?i=java,androidstudio,arduino,git,github,vscode" height="48" alt="Java, Android Studio, Arduino, Git, GitHub, VS Code" />
+</p>
 
+### 🔥 Streak
 
----
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=YudhaR&theme=tokyonight&hide_border=true&border_radius=10" alt="GitHub Streak" />
+</p>
 
-<!-- ============================= -->
-<!--           WIP PROJECTS        -->
-<!-- ============================= -->
-
-## Work in Progress  
-
-- **[Project Name]** 🎯  
-  _[Short one-line description of the WIP project.]_  
-
-  Features in development:  
-  - [Planned Feature 1]  
-  - [Planned Feature 2]  
-  - [Planned Feature 3]  
-
----
-
-<!-- ============================= -->
-<!--          CONNECT WITH ME      -->
-<!-- ============================= -->
-
-## Socials
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](INSERT_LINKEDIN_URL)  
-[![Website](https://img.shields.io/badge/Website-000000?logo=About.me&logoColor=white)](INSERT_PERSONAL_SITE_URL)  
-
----
-
-<!-- ============================= -->
-<!--           GITHUB STATS        -->
-<!-- ============================= -->
-
-## GitHub Stats  
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=100&section=footer" width="100%" alt="" />
