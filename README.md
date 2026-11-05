@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=Yudha%20Rizqia&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20Developer%20%7C%20PHP%20%E2%80%A2%20Laravel%20%E2%80%A2%20Python&descAlignY=60&descSize=16" width="100%" alt="Yudha Rizqia" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=180&section=header&text=Yudha%20Rizqia&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Fullstack%20Developer%20%7C%20PHP%20%E2%80%A2%20Python%20%E2%80%A2%20JavaScript&descAlignY=60&descSize=16" width="100%" alt="Yudha Rizqia" />
 
 <p align="center">
   <a href="https://github.com/YudhaR">
