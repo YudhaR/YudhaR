@@ -1,8 +1,9 @@
 """Fetch GitHub stats (repos, contributed, stars, commits, followers, lines of code)
 and write them into the "GitHub Stats" lines of dark_mode.svg and light_mode.svg.
 
-Uses the public REST API. Set GITHUB_TOKEN (or ACCESS_TOKEN) for higher rate limits.
-Only public repositories and commits are counted.
+With ACCESS_TOKEN (a personal access token that can read your repositories) it uses
+the GraphQL API and also counts private repositories the token can read.
+Without it, it falls back to the public REST API (GITHUB_TOKEN only raises rate limits).
 """
 import json
 import os
@@ -14,7 +15,8 @@ import urllib.request
 from xml.sax.saxutils import escape
 
 USER = os.environ.get("USER_NAME") or (sys.argv[1] if len(sys.argv) > 1 else "YudhaR")
-TOKEN = os.environ.get("ACCESS_TOKEN") or os.environ.get("GITHUB_TOKEN")
+PRIVATE_TOKEN = os.environ.get("ACCESS_TOKEN")
+TOKEN = PRIVATE_TOKEN or os.environ.get("GITHUB_TOKEN")
 SVG_FILES = ["dark_mode.svg", "light_mode.svg"]
 
 LINE_CHARS = 76   # must match generate_profile.py
@@ -79,7 +81,116 @@ def lines_of_code(repo_names):
     return add, dele
 
 
+def graphql(query, variables):
+    """POST a GraphQL query. Partial errors (e.g. a repo the token cannot read) are
+    logged and the data that did come back is returned."""
+    body = json.dumps({"query": query, "variables": variables}).encode()
+    headers = {"User-Agent": "profile-stats", "Authorization": f"Bearer {PRIVATE_TOKEN}",
+               "Content-Type": "application/json"}
+    for attempt in range(5):
+        try:
+            req = urllib.request.Request("https://api.github.com/graphql", data=body, headers=headers)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code in (502, 503, 504, 403, 429) and attempt < 4:
+                print(f"graphql {e.code}, retrying")
+                time.sleep(5 * (attempt + 1))
+                continue
+            raise
+        if data.get("errors"):
+            # Actions logs are public on a public repo: never print messages that may
+            # contain private repository names.
+            print(f"graphql: {len(data['errors'])} item(s) not readable with this token, skipped")
+        if not data.get("data"):
+            raise RuntimeError("graphql returned no data")
+        return data["data"]
+    raise RuntimeError("graphql: giving up")
+
+
+REPOS_QUERY = """
+query($login: String!, $id: ID!, $after: String) {
+  user(login: $login) {
+    repositories(first: 50, after: $after,
+                 ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
+      pageInfo { hasNextPage endCursor }
+      nodes {
+        nameWithOwner isFork stargazerCount
+        owner { login }
+        defaultBranchRef { target { ... on Commit { history(author: {id: $id}) { totalCount } } } }
+      }
+    }
+  }
+}"""
+
+HISTORY_QUERY = """
+query($owner: String!, $name: String!, $id: ID!, $after: String) {
+  repository(owner: $owner, name: $name) {
+    defaultBranchRef { target { ... on Commit {
+      history(first: 100, after: $after, author: {id: $id}) {
+        pageInfo { hasNextPage endCursor }
+        nodes { additions deletions }
+      }
+    } } }
+  }
+}"""
+
+
+def _history(node):
+    return (((node or {}).get("defaultBranchRef") or {}).get("target") or {}).get("history") or {}
+
+
+def fetch_with_private():
+    """Every repository the token can read (own, collaborator, organization), private included."""
+    me = graphql("query($l: String!) { user(login: $l) { id followers { totalCount } } }", {"l": USER})["user"]
+    uid = me["id"]
+
+    repos, after = [], None
+    while True:
+        page = graphql(REPOS_QUERY, {"login": USER, "id": uid, "after": after})["user"]["repositories"]
+        repos += [r for r in page["nodes"] if r]
+        if not page["pageInfo"]["hasNextPage"]:
+            break
+        after = page["pageInfo"]["endCursor"]
+
+    owned = [r for r in repos if r["owner"]["login"].lower() == USER.lower()]
+    contributed = [r for r in repos if _history(r).get("totalCount", 0) > 0]
+
+    add = dele = 0
+    for r in contributed:
+        if r["isFork"]:
+            continue
+        owner, name = r["nameWithOwner"].split("/", 1)
+        after = None
+        while True:
+            data = graphql(HISTORY_QUERY, {"owner": owner, "name": name, "id": uid, "after": after})
+            history = _history(data.get("repository"))
+            nodes = [n for n in history.get("nodes") or [] if n]
+            add += sum(n["additions"] for n in nodes)
+            dele += sum(n["deletions"] for n in nodes)
+            page_info = history.get("pageInfo") or {}
+            if not page_info.get("hasNextPage"):
+                break
+            after = page_info["endCursor"]
+
+    return {
+        "repos": len(owned), "contributed": len(contributed),
+        "stars": sum(r["stargazerCount"] for r in owned),
+        "commits": sum(_history(r)["totalCount"] for r in contributed),
+        "followers": me["followers"]["totalCount"],
+        "loc": add - dele, "loc_add": add, "loc_del": dele,
+    }
+
+
 def fetch():
+    if PRIVATE_TOKEN:
+        print("ACCESS_TOKEN set: counting private repositories too")
+        return fetch_with_private()
+    print("no ACCESS_TOKEN: counting public repositories only")
+    return fetch_public()
+
+
+def fetch_public():
     _, user = api(f"/users/{USER}")
     _, repos = api(f"/users/{USER}/repos?per_page=100&type=owner")
     stars = sum(r["stargazers_count"] for r in repos)
