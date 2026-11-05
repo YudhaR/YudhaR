@@ -1,0 +1,43 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "30 17 * * *" # 00:30 WIB setiap hari
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/scripts/**
+      - .github/workflows/streak.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate streak.svg
+        run: python3 .github/scripts/streak.py ${{ github.repository_owner }}
+
+      - name: Update GitHub Stats in terminal card
+        env:
+          USER_NAME: ${{ github.repository_owner }}
+          # Optional: add a personal access token as the ACCESS_TOKEN secret for higher limits
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/stats.py
+
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain -- streak.svg dark_mode.svg light_mode.svg)" ]; then
+            echo "cards unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add streak.svg dark_mode.svg light_mode.svg
+          git commit -m "Update profile cards"
+          git push
