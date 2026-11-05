@@ -13,11 +13,16 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # pinned to a commit so a moved tag cannot swap in different code (v4.2.2)
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
       - name: Generate streak.svg
         run: python3 .github/scripts/streak.py ${{ github.repository_owner }}
@@ -25,7 +30,7 @@ jobs:
       - name: Update GitHub Stats in terminal card
         env:
           USER_NAME: ${{ github.repository_owner }}
-          # Optional: add a personal access token as the ACCESS_TOKEN secret for higher limits
+          # Optional read-only personal access token; lets private repos count in the totals
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/stats.py
