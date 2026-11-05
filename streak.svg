@@ -10,7 +10,7 @@ text{font-family:"Segoe UI",Ubuntu,"Helvetica Neue",Sans-Serif}
 <rect width="495" height="195" rx="10" fill="#1a1b27"/>
 <line x1="165" y1="28" x2="165" y2="170" stroke="#e4e2e2" stroke-width="1" opacity=".6"/>
 <line x1="330" y1="28" x2="330" y2="170" stroke="#e4e2e2" stroke-width="1" opacity=".6"/>
-<text x="82.5" y="79" text-anchor="middle" class="fade" style="animation-delay:0.6s" fill="#70a5fd" font-size="28" font-weight="700">1,244</text>
+<text x="82.5" y="79" text-anchor="middle" class="fade" style="animation-delay:0.6s" fill="#70a5fd" font-size="28" font-weight="700">1,245</text>
 <text x="82.5" y="114" text-anchor="middle" class="fade" style="animation-delay:0.7s" fill="#7aa2f7" font-size="14" font-weight="400">Total Contributions</text>
 <text x="82.5" y="145" text-anchor="middle" class="fade" style="animation-delay:0.8s" fill="#38bdae" font-size="12" font-weight="400">May 19, 2022 - Present</text>
 <circle cx="247.5" cy="71" r="40" fill="none" stroke="#7aa2f7" stroke-width="5" class="ring" transform="rotate(-90 247.5 71)"/>
